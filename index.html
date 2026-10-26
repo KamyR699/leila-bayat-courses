@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ee">
+  <meta name="description" content="دسترسی زودهنگام کارورزان به کدهای تخفیف دوره‌های آموزشی دکتر لیلا بیات">
+  <title>دسترسی اختصاصی کارورزان | دکتر لیلا بیات</title>
+  <style>
+    :root {
+      --paper: #f7f4ee;
+      --card: #fffefa;
+      --ink: #292923;
+      --muted: #77736b;
+      --olive: #656653;
+      --line: #e4ded3;
+      --soft: #eeeadf;
+      --shadow: 0 12px 36px rgba(49, 43, 32, .055);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 10% 0%, rgba(225, 219, 202, .3), transparent 35rem),
+        var(--paper);
+      color: var(--ink);
+      font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    .page { width: min(100% - 32px, 760px); margin: 0 auto; padding: 26px 0 42px; }
+    .topline { display:flex; justify-content:space-between; align-items:center; gap:16px; padding: 8px 2px 20px; }
+    .brand { font-size: .78rem; letter-spacing: .04em; color: var(--muted); font-weight: 700; }
+    .brand small { display:block; font-size:.72rem; font-weight:400; letter-spacing:0; }
+    .seal { width:44px; height:44px; display:grid; place-items:center; border:1px solid #d8d1c4; border-radius:14px; color:var(--olive); background:rgba(255,254,250,.65); }
+    .hero { border-top:1px solid #d8d1c4; border-bottom:1px solid #d8d1c4; padding: 34px 2px 30px; }
+    .eyebrow { display:flex; align-items:center; gap:9px; color:var(--olive); font-size:.76rem; font-weight:700; margin-bottom:14px; }
+    .dot { width:7px; height:7px; border-radius:50%; background:#8a8b70; display:inline-block; }
+    h1 { margin:0; font-size:clamp(1.75rem, 5.2vw, 2.65rem); line-height:1.5; letter-spacing:-.04em; font-weight:800; }
+    .intro { max-width:610px; margin:15px 0 0; color:#57564f; font-size:1rem; }
+    .note { display:flex; gap:10px; align-items:flex-start; margin-top:20px; color:var(--muted); font-size:.86rem; }
+    .note svg { flex:none; margin-top:5px; }
+    .section-head { display:flex; justify-content:space-between; align-items:end; gap:12px; margin:30px 0 14px; }
+    h2 { font-size:1.15rem; margin:0; }
+    .section-head p { margin:3px 0 0; color:var(--muted); font-size:.82rem; }
+    .course-list { display:grid; gap:12px; }
+    .course { background:rgba(255,254,250,.92); border:1px solid var(--line); border-radius:18px; padding:18px; box-shadow:var(--shadow); }
+    .course-top { display:flex; align-items:center; gap:13px; }
+    .number { flex:none; width:42px; height:42px; border-radius:13px; background:#f0ede5; display:grid; place-items:center; color:var(--olive); font-size:.83rem; font-weight:700; }
+    .course-info { flex:1; min-width:0; }
+    .course h3 { margin:0; font-size:1rem; font-weight:700; }
+    .discount { color:var(--muted); font-size:.82rem; margin-top:2px; }
+    .percent { border:1px solid #d8d8c7; color:#555744; background:#f7f6ef; border-radius:999px; padding:4px 10px; font-size:.8rem; white-space:nowrap; direction:ltr; }
+    .code-area { border-top:1px solid #eeeae3; margin-top:15px; padding-top:14px; display:flex; justify-content:space-between; align-items:center; gap:12px; }
+    .code-label { color:var(--muted); font-size:.76rem; margin-bottom:3px; }
+    .code { direction:ltr; unicode-bidi:isolate; font-family:Consolas, "Courier New", monospace; letter-spacing:.025em; font-weight:700; font-size:.95rem; overflow-wrap:anywhere; }
+    .code.hidden { filter:blur(6px); user-select:none; }
+    .actions { display:flex; flex-wrap:wrap; gap:8px; }
+    button, .primary-link { border:1px solid #d9d4c9; border-radius:11px; background:transparent; color:var(--ink); font:inherit; font-size:.82rem; padding:9px 12px; cursor:pointer; transition:background .18s ease, transform .18s ease; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:7px; }
+    button:hover, .primary-link:hover { background:#f0ede5; }
+    button:active, .primary-link:active { transform:scale(.98); }
+    .reveal { background:#eeeadf; border-color:#eeeadf; color:#3e4034; }
+    .guide { background:#eeeadf; border-radius:18px; padding:20px; margin-top:24px; }
+    .guide-title { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+    .guide h2 { font-size:1.05rem; }
+    .guide ol { padding-right:22px; margin:10px 0 18px; color:#57564f; font-size:.9rem; }
+    .guide li { padding-right:3px; margin:7px 0; }
+    .primary-link { background:#656653; color:white; border-color:#656653; }
+    .primary-link:hover { background:#535443; }
+    .foot { text-align:center; color:var(--muted); font-size:.77rem; margin:22px auto 0; max-width:570px; }
+    .toast { position:fixed; bottom:20px; left:50%; transform:translate(-50%, 15px); opacity:0; pointer-events:none; background:#292923; color:white; padding:10px 16px; border-radius:12px; font-size:.84rem; box-shadow:0 8px 30px #0002; transition:all .2s ease; z-index:10; max-width:calc(100% - 32px); text-align:center; }
+    .toast.show { opacity:1; transform:translate(-50%,0); }
+    .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+    @media (max-width:520px) {
+      .page { width:min(100% - 22px, 760px); padding-top:16px; }
+      .hero { padding-top:26px; }
+      .course { padding:15px; border-radius:16px; }
+      .course-top { gap:10px; }
+      .number { width:37px; height:37px; }
+      .percent { font-size:.74rem; padding:3px 8px; }
+      .code-area { align-items:flex-start; flex-direction:column; }
+      .actions { width:100%; }
+      .actions button { flex:1; }
+      .code { font-size:.91rem; }
+      .section-head { align-items:flex-start; flex-direction:column; }
+    }
+    @media (prefers-reduced-motion:reduce) { * { scroll-behavior:auto !important; transition:none !important; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="topline">
+      <div class="brand">دکتر لیلا بیات<small>دوره‌های آموزشی</small></div>
+      <div class="seal" aria-hidden="true">
+        <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 14.7 8.5 21 9.4 16.5 13.8 17.6 20 12 17.1 6.4 20 7.5 13.8 3 9.4 9.3 8.5 12 3Z"/><path d="M9 12.2 11 14.2 15.2 10"/></svg>
+      </div>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="eyebrow"><span class="dot"></span> دسترسی زودهنگام ویژه کارورزان</div>
+      <h1 id="page-title">یک هفته زودتر،<br>برای شما.</h1>
+      <p class="intro">شما به‌عنوان یکی از کارورزان، پیش از انتشار عمومی به کدهای تخفیف اختصاصی دوره‌های آموزشی دکتر لیلا بیات دسترسی دارید. برای هر دوره، کد مخصوص همان دوره را مشاهده و هنگام خرید وارد کنید.</p>
+      <div class="note">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>این دسترسی پیش از انتشار عمومی در اختیار شما قرار گرفته است. مهلت استفاده در حال حاضر مشخص نشده است.</span>
+      </div>
+    </section>
+
+    <section aria-labelledby="courses-title">
+      <div class="section-head">
+        <div>
+          <h2 id="courses-title">دوره‌های آموزشی شما</h2>
+          <p>کدها را فقط برای دوره مربوط به خود استفاده کنید.</p>
+        </div>
+      </div>
+      <div class="course-list" id="course-list">
+        <article class="course" data-code="COUPON-04FDE">
+          <div class="course-top"><div class="number">۰۱</div><div class="course-info"><h3>مدیریت خشم</h3><div class="discount">کد تخفیف اختصاصی این دوره</div></div><div class="percent">۷۰٪ تخفیف</div></div>
+          <div class="code-area"><div><div class="code-label">کد تخفیف</div><div class="code hidden" aria-label="کد تخفیف پنهان">COUPON-04FDE</div></div><div class="actions"><button type="button" class="reveal" aria-expanded="false">نمایش کد</button><button type="button" class="copy" hidden>کپی کد</button></div></div>
+        </article>
+        <article class="course" data-code="COUPON-139F3">
+          <div class="course-top"><div class="number">۰۲</div><div class="course-info"><h3>مهارت همدلی</h3><div class="discount">کد تخفیف اختصاصی این دوره</div></div><div class="percent">۷۰٪ تخفیف</div></div>
+          <div class="code-area"><div><div class="code-label">کد تخفیف</div><div class="code hidden" aria-label="کد تخفیف پنهان">COUPON-139F3</div></div><div class="actions"><button type="button" class="reveal" aria-expanded="false">نمایش کد</button><button type="button" class="copy" hidden>کپی کد</button></div></div>
+        </article>
+        <article class="course" data-code="COUPON-24816">
+          <div class="course-top"><div class="number">۰۳</div><div class="course-info"><h3>عزت‌نفس</h3><div class="discount">کد تخفیف اختصاصی این دوره</div></div><div class="percent">۷۰٪ تخفیف</div></div>
+          <div class="code-area"><div><div class="code-label">کد تخفیف</div><div class="code hidden" aria-label="کد تخفیف پنهان">COUPON-24816</div></div><div class="actions"><button type="button" class="reveal" aria-expanded="false">نمایش کد</button><button type="button" class="copy" hidden>کپی کد</button></div></div>
+        </article>
+        <article class="course" data-code="COUPON-66475">
+          <div class="course-top"><div class="number">۰۴</div><div class="course-info"><h3>حل مسئله</h3><div class="discount">کد تخفیف اختصاصی این دوره</div></div><div class="percent">۷۰٪ تخفیف</div></div>
+          <div class="code-area"><div><div class="code-label">کد تخفیف</div><div class="code hidden" aria-label="کد تخفیف پنهان">COUPON-66475</div></div><div class="actions"><button type="button" class="reveal" aria-expanded="false">نمایش کد</button><button type="button" class="copy" hidden>کپی کد</button></div></div>
+        </article>
+        <article class="course" data-code="COUPON-452A7">
+          <div class="course-top"><div class="number">۰۵</div><div class="course-info"><h3>مدیریت استرس</h3><div class="discount">کد تخفیف اختصاصی این دوره</div></div><div class="percent">۷۰٪ تخفیف</div></div>
+          <div class="code-area"><div><div class="code-label">کد تخفیف</div><div class="code hidden" aria-label="کد تخفیف پنهان">COUPON-452A7</div></div><div class="actions"><button type="button" class="reveal" aria-expanded="false">نمایش کد</button><button type="button" class="copy" hidden>کپی کد</button></div></div>
+        </article>
+        <article class="course" data-code="COUPON-E3E9A">
+          <div class="course-top"><div class="number">۰۶</div><div class="course-info"><h3>قاطعیت و جرئت‌ورزی</h3><div class="discount">کد تخفیف اختصاصی این دوره</div></div><div class="percent">۷۰٪ تخفیف</div></div>
+          <div class="code-area"><div><div class="code-label">کد تخفیف</div><div class="code hidden" aria-label="کد تخفیف پنهان">COUPON-E3E9A</div></div><div class="actions"><button type="button" class="reveal" aria-expanded="false">نمایش کد</button><button type="button" class="copy" hidden>کپی کد</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide" aria-labelledby="guide-title">
+      <div class="guide-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h7M9 17h7"/></svg>
+        <h2 id="guide-title">راهنمای استفاده از کد تخفیف</h2>
+      </div>
+      <ol>
+        <li>از طریق دکمه زیر وارد صفحه دوره‌های دکتر لیلا بیات در مکتب‌خونه شوید.</li>
+        <li>دوره موردنظرتان را انتخاب کنید و مراحل خرید را ادامه دهید.</li>
+        <li>در مرحله پرداخت، کد مربوط به همان دوره را در کادر کد تخفیف وارد و اعمال کنید.</li>
+        <li>مبلغ نهایی را بررسی کنید؛ سپس خرید را تکمیل کنید.</li>
+      </ol>
+      <a class="primary-link" href="https://maktabkhooneh.org/teacher/%D9%84%DB%8C%D9%84%D8%A7-%D8%A8%DB%8C%D8%A7%D8%AA/" target="_blank" rel="noopener noreferrer">
+        مشاهده دوره‌ها در مکتب‌خونه
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </a>
+    </section>
+
+    <footer class="foot">این کدها برای استفاده در خرید دوره‌های مربوط به خود در نظر گرفته شده‌اند. لطفاً پیش از پرداخت، اعمال شدن تخفیف را بررسی کنید.</footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+    const toast = document.getElementById('toast');
+    let toastTimer;
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 2300);
+    }
+    document.querySelectorAll('.course').forEach(card => {
+      const reveal = card.querySelector('.reveal');
+      const copy = card.querySelector('.copy');
+      const code = card.querySelector('.code');
+      reveal.addEventListener('click', () => {
+        const shown = reveal.getAttribute('aria-expanded') === 'true';
+        reveal.setAttribute('aria-expanded', String(!shown));
+        code.classList.toggle('hidden', shown);
+        reveal.textContent = shown ? 'نمایش کد' : 'پنهان کردن کد';
+        copy.hidden = shown;
+      });
+      copy.addEventListener('click', async () => {
+        const value = card.dataset.code;
+        try {
+          await navigator.clipboard.writeText(value);
+          showToast('کد تخفیف کپی شد.');
+        } catch (err) {
+          const range = document.createRange();
+          range.selectNodeContents(code);
+          const selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+          showToast('کد را انتخاب کنید و کپی کنید.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
