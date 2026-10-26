@@ -7,6 +7,7 @@
   <meta name="description" content="دسترسی زودهنگام کارورزان به کدهای تخفیف دوره‌های آموزشی دکتر لیلا بیات">
   <title>دسترسی اختصاصی کارورزان | دکتر لیلا بیات</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
     :root {
       --paper: #f7f4ee;
       --card: #fffefa;
@@ -25,7 +26,7 @@
         radial-gradient(ellipse at 10% 0%, rgba(225, 219, 202, .3), transparent 35rem),
         var(--paper);
       color: var(--ink);
-      font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+      font-family: "Vazirmatn", Tahoma, "Segoe UI", Arial, sans-serif;
       line-height: 1.9;
       -webkit-font-smoothing: antialiased;
     }
@@ -54,6 +55,10 @@
     .discount { color:var(--muted); font-size:.82rem; margin-top:2px; }
     .percent { border:1px solid #d8d8c7; color:#555744; background:#f7f6ef; border-radius:999px; padding:4px 10px; font-size:.8rem; white-space:nowrap; direction:ltr; }
     .code-area { border-top:1px solid #eeeae3; margin-top:15px; padding-top:14px; display:flex; justify-content:space-between; align-items:center; gap:12px; }
+    .course-link-wrap { border-top:1px solid #eeeae3; margin-top:14px; padding-top:14px; }
+    .course-link { width:100%; background:#656653; color:#fff; border-color:#656653; font-weight:600; }
+    .course-link:hover { background:#535443; }
+    .purchase-note { border:1px solid #dedacb; background:rgba(238,234,223,.65); border-radius:14px; padding:13px 15px; color:#55564a; font-size:.9rem; margin:18px 0 0; }
     .code-label { color:var(--muted); font-size:.76rem; margin-bottom:3px; }
     .code { direction:ltr; unicode-bidi:isolate; font-family:Consolas, "Courier New", monospace; letter-spacing:.025em; font-weight:700; font-size:.95rem; overflow-wrap:anywhere; }
     .code.hidden { filter:blur(6px); user-select:none; }
@@ -115,30 +120,37 @@
           <p>کدها را فقط برای دوره مربوط به خود استفاده کنید.</p>
         </div>
       </div>
+      <p class="purchase-note">برای خرید هر دوره، حتماً از لینک اختصاصی همان دوره که در پایین کارت آن قرار دارد وارد مکتب‌خونه شوید. سپس کد تخفیف همان دوره را در مرحله پرداخت وارد کنید؛ از لینک دوره‌های دیگر استفاده نکنید.</p>
       <div class="course-list" id="course-list">
         <article class="course" data-code="COUPON-04FDE">
           <div class="course-top"><div class="number">۰۱</div><div class="course-info"><h3>مدیریت خشم</h3><div class="discount">کد تخفیف اختصاصی این دوره</div></div><div class="percent">۷۰٪ تخفیف</div></div>
           <div class="code-area"><div><div class="code-label">کد تخفیف</div><div class="code hidden" aria-label="کد تخفیف پنهان">COUPON-04FDE</div></div><div class="actions"><button type="button" class="reveal" aria-expanded="false">نمایش کد</button><button type="button" class="copy" hidden>کپی کد</button></div></div>
+          <div class="course-link-wrap"><a class="primary-link course-link" href="https://mktb.me/ye2g/" target="_blank" rel="noopener noreferrer">ورود به صفحه خرید این دوره <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="course" data-code="COUPON-139F3">
           <div class="course-top"><div class="number">۰۲</div><div class="course-info"><h3>مهارت همدلی</h3><div class="discount">کد تخفیف اختصاصی این دوره</div></div><div class="percent">۷۰٪ تخفیف</div></div>
           <div class="code-area"><div><div class="code-label">کد تخفیف</div><div class="code hidden" aria-label="کد تخفیف پنهان">COUPON-139F3</div></div><div class="actions"><button type="button" class="reveal" aria-expanded="false">نمایش کد</button><button type="button" class="copy" hidden>کپی کد</button></div></div>
+          <div class="course-link-wrap"><a class="primary-link course-link" href="https://mktb.me/6gl3/" target="_blank" rel="noopener noreferrer">ورود به صفحه خرید این دوره <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="course" data-code="COUPON-24816">
           <div class="course-top"><div class="number">۰۳</div><div class="course-info"><h3>عزت‌نفس</h3><div class="discount">کد تخفیف اختصاصی این دوره</div></div><div class="percent">۷۰٪ تخفیف</div></div>
           <div class="code-area"><div><div class="code-label">کد تخفیف</div><div class="code hidden" aria-label="کد تخفیف پنهان">COUPON-24816</div></div><div class="actions"><button type="button" class="reveal" aria-expanded="false">نمایش کد</button><button type="button" class="copy" hidden>کپی کد</button></div></div>
+          <div class="course-link-wrap"><a class="primary-link course-link" href="https://mktb.me/kgzl/" target="_blank" rel="noopener noreferrer">ورود به صفحه خرید این دوره <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="course" data-code="COUPON-66475">
           <div class="course-top"><div class="number">۰۴</div><div class="course-info"><h3>حل مسئله</h3><div class="discount">کد تخفیف اختصاصی این دوره</div></div><div class="percent">۷۰٪ تخفیف</div></div>
           <div class="code-area"><div><div class="code-label">کد تخفیف</div><div class="code hidden" aria-label="کد تخفیف پنهان">COUPON-66475</div></div><div class="actions"><button type="button" class="reveal" aria-expanded="false">نمایش کد</button><button type="button" class="copy" hidden>کپی کد</button></div></div>
+          <div class="course-link-wrap"><a class="primary-link course-link" href="https://mktb.me/bdgh/" target="_blank" rel="noopener noreferrer">ورود به صفحه خرید این دوره <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="course" data-code="COUPON-452A7">
           <div class="course-top"><div class="number">۰۵</div><div class="course-info"><h3>مدیریت استرس</h3><div class="discount">کد تخفیف اختصاصی این دوره</div></div><div class="percent">۷۰٪ تخفیف</div></div>
           <div class="code-area"><div><div class="code-label">کد تخفیف</div><div class="code hidden" aria-label="کد تخفیف پنهان">COUPON-452A7</div></div><div class="actions"><button type="button" class="reveal" aria-expanded="false">نمایش کد</button><button type="button" class="copy" hidden>کپی کد</button></div></div>
+          <div class="course-link-wrap"><a class="primary-link course-link" href="https://mktb.me/23cz/" target="_blank" rel="noopener noreferrer">ورود به صفحه خرید این دوره <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="course" data-code="COUPON-E3E9A">
           <div class="course-top"><div class="number">۰۶</div><div class="course-info"><h3>قاطعیت و جرئت‌ورزی</h3><div class="discount">کد تخفیف اختصاصی این دوره</div></div><div class="percent">۷۰٪ تخفیف</div></div>
           <div class="code-area"><div><div class="code-label">کد تخفیف</div><div class="code hidden" aria-label="کد تخفیف پنهان">COUPON-E3E9A</div></div><div class="actions"><button type="button" class="reveal" aria-expanded="false">نمایش کد</button><button type="button" class="copy" hidden>کپی کد</button></div></div>
+          <div class="course-link-wrap"><a class="primary-link course-link" href="https://mktb.me/gg6w/" target="_blank" rel="noopener noreferrer">ورود به صفحه خرید این دوره <span aria-hidden="true">↗</span></a></div>
         </article>
       </div>
     </section>
@@ -149,15 +161,12 @@
         <h2 id="guide-title">راهنمای استفاده از کد تخفیف</h2>
       </div>
       <ol>
-        <li>از طریق دکمه زیر وارد صفحه دوره‌های دکتر لیلا بیات در مکتب‌خونه شوید.</li>
-        <li>دوره موردنظرتان را انتخاب کنید و مراحل خرید را ادامه دهید.</li>
+        <li>از لینک اختصاصی همان دوره که در پایین کارت آن قرار دارد وارد صفحه دوره در مکتب‌خونه شوید.</li>
+        <li>مراحل خرید همان دوره را ادامه دهید و از لینک دوره دیگری استفاده نکنید.</li>
         <li>در مرحله پرداخت، کد مربوط به همان دوره را در کادر کد تخفیف وارد و اعمال کنید.</li>
         <li>مبلغ نهایی را بررسی کنید؛ سپس خرید را تکمیل کنید.</li>
       </ol>
-      <a class="primary-link" href="https://maktabkhooneh.org/teacher/%D9%84%DB%8C%D9%84%D8%A7-%D8%A8%DB%8C%D8%A7%D8%AA/" target="_blank" rel="noopener noreferrer">
-        مشاهده دوره‌ها در مکتب‌خونه
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
-      </a>
+
     </section>
 
     <footer class="foot">این کدها برای استفاده در خرید دوره‌های مربوط به خود در نظر گرفته شده‌اند. لطفاً پیش از پرداخت، اعمال شدن تخفیف را بررسی کنید.</footer>
